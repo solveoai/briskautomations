@@ -3,8 +3,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence, useSpring } from "framer-motion";
 import {
-  Menu,
-  X,
   PlayCircle,
   Hexagon,
   ArrowRight,
@@ -12,11 +10,8 @@ import {
   TrendingUp,
   Clock,
   DollarSign,
-  Zap,
-  Bot,
   Cloud,
   Target,
-  MessageSquare,
   FacebookIcon,
   InstagramIcon,
   YoutubeIcon,
