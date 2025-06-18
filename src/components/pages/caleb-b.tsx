@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import { ArrowLeft, Hexagon, Phone, Calendar, CheckCircle, Star, Users, PhoneCall, ArrowRight, Play, Target, Zap, BarChart3, Settings, Clock, Shield, Building, ShoppingCart, Home, Heart, Palette, ChevronDown, ChevronUp } from "lucide-react";
+import { ArrowLeft, Hexagon, Phone, Calendar, CheckCircle, PhoneCall, Play, Target, Zap, BarChart3, Settings, Building, ShoppingCart, Home, Heart, Palette, ChevronDown, ChevronUp } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const CalebBPage: React.FC = () => {
@@ -38,39 +38,39 @@ const CalebBPage: React.FC = () => {
   };
 
   const industries = [
-    { 
-      name: "Professional Services", 
-      icon: Building, 
+    {
+      name: "Professional Services",
+      icon: Building,
       image: "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=600",
       description: "Law firms, consulting, accounting, and professional service providers"
     },
-    { 
-      name: "E-commerce Stores", 
-      icon: ShoppingCart, 
+    {
+      name: "E-commerce Stores",
+      icon: ShoppingCart,
       image: "https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=600",
       description: "Online retailers, dropshipping, and e-commerce businesses"
     },
-    { 
-      name: "Real Estate", 
-      icon: Home, 
+    {
+      name: "Real Estate",
+      icon: Home,
       image: "https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg?auto=compress&cs=tinysrgb&w=600",
       description: "Real estate agents, brokers, and property management companies"
     },
-    { 
-      name: "Healthcare Practices", 
-      icon: Heart, 
+    {
+      name: "Healthcare Practices",
+      icon: Heart,
       image: "https://images.pexels.com/photos/263402/pexels-photo-263402.jpeg?auto=compress&cs=tinysrgb&w=600",
       description: "Medical practices, dental offices, and healthcare providers"
     },
-    { 
-      name: "Home Services", 
-      icon: Settings, 
+    {
+      name: "Home Services",
+      icon: Settings,
       image: "https://images.pexels.com/photos/1249611/pexels-photo-1249611.jpeg?auto=compress&cs=tinysrgb&w=600",
       description: "HVAC, plumbing, electrical, and home improvement services"
     },
-    { 
-      name: "Digital Agencies", 
-      icon: Palette, 
+    {
+      name: "Digital Agencies",
+      icon: Palette,
       image: "https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=600",
       description: "Marketing agencies, web design, and digital service providers"
     }
@@ -151,14 +151,14 @@ const CalebBPage: React.FC = () => {
   return (
     <div className="min-h-screen bg-[#F0F0F5] relative overflow-hidden">
       {/* Background Elements */}
-      <div 
+      <div
         className="absolute inset-0 opacity-[0.12]"
         style={{
           backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='grain'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='1.2' numOctaves='6' seed='5' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23grain)' opacity='1'/%3E%3C/svg%3E")`,
         }}
       />
-      
-      <div 
+
+      <div
         className="absolute inset-0 opacity-40"
         style={{
           background: 'radial-gradient(ellipse at center, rgba(255, 255, 255, 0.1) 0%, rgba(212, 160, 167, 0.06) 30%, rgba(45, 26, 83, 0.04) 70%, rgba(45, 26, 83, 0.08) 100%)',
@@ -189,7 +189,7 @@ const CalebBPage: React.FC = () => {
                     ease: "linear"
                   }}
                 />
-                
+
                 <motion.div
                   className="w-6 h-6 bg-gradient-to-br from-[#2D1A53] to-[#4A3B7A] rounded-full flex items-center justify-center shadow-lg"
                   animate={{
@@ -292,7 +292,7 @@ const CalebBPage: React.FC = () => {
                       Get a Call from Caleb
                       <Phone className="w-5 h-5" />
                     </motion.button>
-                    
+
                     <motion.button
                       className="bg-white/40 text-[#2D1A53] px-8 py-4 rounded-xl font-semibold border border-[#2D1A53]/20 hover:bg-white/60 transition-all duration-300 flex items-center justify-center gap-2"
                       whileHover={{ scale: 1.02 }}
@@ -312,8 +312,8 @@ const CalebBPage: React.FC = () => {
                   transition={{ duration: 0.3 }}
                 >
                   <div className="absolute inset-0 bg-gradient-to-br from-[#2D1A53]/20 to-[#C89BA1]/20 rounded-3xl blur-2xl" />
-                  
-                  <div 
+
+                  <div
                     className="relative bg-white/60 backdrop-blur-xl border border-white/40 rounded-3xl p-8 shadow-2xl"
                     style={{
                       background: 'linear-gradient(135deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.2) 100%)',
@@ -394,8 +394,8 @@ const CalebBPage: React.FC = () => {
                     transition={{ duration: 0.3 }}
                   >
                     <div className="absolute inset-0 bg-gradient-to-br from-[#8B5CF6]/10 to-[#C89BA1]/10 rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-300" />
-                    
-                    <div 
+
+                    <div
                       className="relative bg-white/60 backdrop-blur-xl border border-white/40 rounded-2xl p-6 shadow-lg group-hover:shadow-2xl transition-all duration-300 text-center"
                       style={{
                         background: 'linear-gradient(135deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.2) 100%)',
@@ -445,21 +445,18 @@ const CalebBPage: React.FC = () => {
                         <motion.button
                           key={index}
                           onClick={() => setSelectedIndustry(industry.name)}
-                          className={`p-4 rounded-xl border transition-all duration-300 text-left ${
-                            selectedIndustry === industry.name
-                              ? 'border-[#8B5CF6] bg-[#8B5CF6]/10'
-                              : 'border-white/40 bg-white/20 hover:bg-white/30'
-                          }`}
+                          className={`p-4 rounded-xl border transition-all duration-300 text-left ${selectedIndustry === industry.name
+                            ? 'border-[#8B5CF6] bg-[#8B5CF6]/10'
+                            : 'border-white/40 bg-white/20 hover:bg-white/30'
+                            }`}
                           whileHover={{ scale: 1.02 }}
                           whileTap={{ scale: 0.98 }}
                         >
                           <div className="flex items-center gap-3">
-                            <industry.icon className={`w-5 h-5 ${
-                              selectedIndustry === industry.name ? 'text-[#8B5CF6]' : 'text-[#2D1A53]'
-                            }`} />
-                            <span className={`font-medium text-sm ${
-                              selectedIndustry === industry.name ? 'text-[#8B5CF6]' : 'text-[#2D1A53]'
-                            }`}>
+                            <industry.icon className={`w-5 h-5 ${selectedIndustry === industry.name ? 'text-[#8B5CF6]' : 'text-[#2D1A53]'
+                              }`} />
+                            <span className={`font-medium text-sm ${selectedIndustry === industry.name ? 'text-[#8B5CF6]' : 'text-[#2D1A53]'
+                              }`}>
                               {industry.name}
                             </span>
                           </div>
@@ -471,8 +468,8 @@ const CalebBPage: React.FC = () => {
                   {/* Contact Form */}
                   <div className="relative">
                     <div className="absolute inset-0 bg-gradient-to-br from-[#2D1A53]/10 to-[#C89BA1]/10 rounded-3xl blur-xl" />
-                    
-                    <div 
+
+                    <div
                       className="relative bg-white/60 backdrop-blur-xl border border-white/40 rounded-3xl p-8 shadow-lg"
                       style={{
                         background: 'linear-gradient(135deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.2) 100%)',
@@ -480,7 +477,7 @@ const CalebBPage: React.FC = () => {
                       }}
                     >
                       <h3 className="text-xl font-bold text-[#2D1A53] mb-6">Receive a live call from Caleb</h3>
-                      
+
                       <form onSubmit={handleSubmit} className="space-y-4">
                         <div className="grid grid-cols-2 gap-4">
                           <div>
@@ -508,7 +505,7 @@ const CalebBPage: React.FC = () => {
                             />
                           </div>
                         </div>
-                        
+
                         <div>
                           <label className="block text-sm font-medium text-[#2D1A53] mb-2">Phone Number*</label>
                           <input
@@ -521,7 +518,7 @@ const CalebBPage: React.FC = () => {
                             required
                           />
                         </div>
-                        
+
                         <div>
                           <label className="block text-sm font-medium text-[#2D1A53] mb-2">Email Address*</label>
                           <input
@@ -547,11 +544,10 @@ const CalebBPage: React.FC = () => {
                         </motion.button>
 
                         {submitMessage && (
-                          <div className={`text-center p-3 rounded-lg ${
-                            submitMessage.includes('Success') 
-                              ? 'bg-green-100 text-green-800' 
-                              : 'bg-red-100 text-red-800'
-                          }`}>
+                          <div className={`text-center p-3 rounded-lg ${submitMessage.includes('Success')
+                            ? 'bg-green-100 text-green-800'
+                            : 'bg-red-100 text-red-800'
+                            }`}>
                             {submitMessage}
                           </div>
                         )}
@@ -564,8 +560,8 @@ const CalebBPage: React.FC = () => {
                 <div className="space-y-6">
                   <div className="relative">
                     <div className="absolute inset-0 bg-gradient-to-br from-[#2D1A53]/10 to-[#C89BA1]/10 rounded-3xl blur-xl" />
-                    
-                    <div 
+
+                    <div
                       className="relative bg-white/60 backdrop-blur-xl border border-white/40 rounded-3xl overflow-hidden shadow-lg"
                       style={{
                         background: 'linear-gradient(135deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.2) 100%)',
@@ -638,8 +634,8 @@ const CalebBPage: React.FC = () => {
                     transition={{ delay: index * 0.1 }}
                   >
                     <div className="absolute inset-0 bg-gradient-to-br from-[#2D1A53]/5 to-[#C89BA1]/5 rounded-2xl blur-xl" />
-                    
-                    <div 
+
+                    <div
                       className="relative bg-white/60 backdrop-blur-xl border border-white/40 rounded-2xl shadow-lg overflow-hidden"
                       style={{
                         background: 'linear-gradient(135deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.2) 100%)',
@@ -657,7 +653,7 @@ const CalebBPage: React.FC = () => {
                           <ChevronDown className="w-5 h-5 text-[#8B5CF6] flex-shrink-0" />
                         )}
                       </button>
-                      
+
                       {openFaq === index && (
                         <motion.div
                           initial={{ height: 0, opacity: 0 }}
@@ -679,8 +675,8 @@ const CalebBPage: React.FC = () => {
             <motion.section variants={staggerItem} className="text-center space-y-8">
               <div className="relative">
                 <div className="absolute inset-0 bg-gradient-to-br from-[#2D1A53]/10 to-[#C89BA1]/10 rounded-3xl blur-xl" />
-                
-                <div 
+
+                <div
                   className="relative bg-white/60 backdrop-blur-xl border border-white/40 rounded-3xl p-12 shadow-lg"
                   style={{
                     background: 'linear-gradient(135deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.2) 100%)',
@@ -697,7 +693,7 @@ const CalebBPage: React.FC = () => {
                   >
                     Ready to Scale Your Sales with Caleb?
                   </h2>
-                  
+
                   <p className="text-xl text-[#8B9299] mb-8 max-w-2xl mx-auto">
                     Join hundreds of businesses using Caleb to book more appointments, qualify better leads, and close more deals automatically.
                   </p>
@@ -711,7 +707,7 @@ const CalebBPage: React.FC = () => {
                       Get a Call from Caleb Today
                       <Phone className="w-5 h-5" />
                     </motion.button>
-                    
+
                     <motion.button
                       className="bg-white/40 text-[#2D1A53] px-8 py-4 rounded-xl font-semibold border border-[#2D1A53]/20 hover:bg-white/60 transition-all duration-300"
                       whileHover={{ scale: 1.02 }}
