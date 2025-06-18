@@ -2,7 +2,7 @@
 
 import React, { useState, useRef, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { ArrowLeft, Hexagon, MessageCircle, Clock, CheckCircle, Star, Users, Headphones, ArrowRight, Play, Target, Zap, BarChart3, Settings, Building, ShoppingCart, Home, Heart, Palette, ChevronDown, ChevronUp, X, Send, Minimize2 } from "lucide-react";
+import { ArrowLeft, Hexagon, MessageCircle, Clock, CheckCircle, Star, Users, Headphones, ArrowRight, Play, Target, Zap, BarChart3, ChevronDown, ChevronUp, X, Send, Minimize2 } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const CassieBPage: React.FC = () => {
