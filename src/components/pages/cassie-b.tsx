@@ -2,11 +2,10 @@
 
 import React, { useState, useRef, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { ArrowLeft, Hexagon, MessageCircle, Clock, CheckCircle, Star, Users, Headphones, ArrowRight, Play, Target, Zap, BarChart3, Settings, Shield, Building, ShoppingCart, Home, Heart, Palette, ChevronDown, ChevronUp, X, Send, Minimize2 } from "lucide-react";
+import { ArrowLeft, Hexagon, MessageCircle, Clock, CheckCircle, Star, Users, Headphones, ArrowRight, Play, Target, Zap, BarChart3, Settings, Building, ShoppingCart, Home, Heart, Palette, ChevronDown, ChevronUp, X, Send, Minimize2 } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const CassieBPage: React.FC = () => {
-    const [selectedIndustry, setSelectedIndustry] = useState<string | null>(null);
     const [openFaq, setOpenFaq] = useState<number | null>(null);
     const [showChatWidget, setShowChatWidget] = useState(false);
     const [isMinimized, setIsMinimized] = useState(false);
@@ -149,15 +148,6 @@ const CassieBPage: React.FC = () => {
             transition: { duration: 0.5, ease: "easeOut" },
         },
     };
-
-    const industries = [
-        { name: "Professional Services", icon: Building, image: "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=400" },
-        { name: "E-commerce Stores", icon: ShoppingCart, image: "https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=400" },
-        { name: "Real Estate", icon: Home, image: "https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg?auto=compress&cs=tinysrgb&w=400" },
-        { name: "Healthcare Practices", icon: Heart, image: "https://images.pexels.com/photos/263402/pexels-photo-263402.jpeg?auto=compress&cs=tinysrgb&w=400" },
-        { name: "Home Services", icon: Settings, image: "https://images.pexels.com/photos/1249611/pexels-photo-1249611.jpeg?auto=compress&cs=tinysrgb&w=400" },
-        { name: "Digital Agencies", icon: Palette, image: "https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=400" }
-    ];
 
     const testimonials = [
         {
