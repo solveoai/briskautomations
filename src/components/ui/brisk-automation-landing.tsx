@@ -1465,7 +1465,7 @@ const BriskAutomationLanding: React.FC = () => {
           <img 
             src="/image.png" 
             alt="Built with Bolt.new" 
-            className="w-48 h-48 rounded-full shadow-lg hover:shadow-xl transition-shadow duration-300"
+            className="w-32 h-32 rounded-full shadow-lg hover:shadow-xl transition-shadow duration-300"
           />
         </motion.a>
       </footer>
