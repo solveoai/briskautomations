@@ -1449,67 +1449,6 @@ const BriskAutomationLanding: React.FC = () => {
             ))}
           </div>
         </div>
-      </footer>
-      {/* Footer */}
-      <footer className="relative w-full max-w-6xl mx-auto flex flex-col items-center justify-center rounded-t-4xl border-t bg-[radial-gradient(35%_128px_at_50%_0%,theme(backgroundColor.white/8%),transparent)] px-6 py-12 lg:py-16">
-        <div className="bg-foreground/20 absolute top-0 right-1/2 left-1/2 h-px w-1/3 -translate-x-1/2 -translate-y-1/2 rounded-full blur" />
-
-        <div className="grid w-full gap-8 xl:grid-cols-3 xl:gap-8">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-            className="space-y-4"
-          >
-            <div className="flex items-center gap-3">
-              <Hexagon className="size-8 text-[#2D1A53]" />
-              <span className="text-xl font-bold text-[#2D1A53]">BRISK AUTOMATIONS</span>
-            </div>
-            <p className="text-[#8B9299] mt-8 text-sm md:mt-0">
-              © {new Date().getFullYear()} Brisk Automations. All rights reserved.
-            </p>
-          </motion.div>
-
-          <div className="mt-10 grid grid-cols-2 gap-8 md:grid-cols-4 xl:col-span-2 xl:mt-0">
-            {footerLinks.map((section, index) => (
-              <motion.div
-                key={section.label}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.1 + index * 0.1 }}
-                viewport={{ once: true }}
-              >
-                <div className="mb-10 md:mb-0">
-                  <h3 className="text-xs text-[#2D1A53] font-semibold">{section.label}</h3>
-                  <ul className="text-[#8B9299] mt-4 space-y-2 text-sm">
-                    {section.links.map((link) => (
-                      <li key={link.title}>
-                        {link.href.startsWith('/') ? (
-                          <Link
-                            to={link.href}
-                            className="hover:text-[#2D1A53] inline-flex items-center transition-all duration-300"
-                          >
-                            {link.icon && <link.icon className="me-1 size-4" />}
-                            {link.title}
-                          </Link>
-                        ) : (
-                          <a
-                            href={link.href}
-                            className="hover:text-[#2D1A53] inline-flex items-center transition-all duration-300"
-                          >
-                            {link.icon && <link.icon className="me-1 size-4" />}
-                            {link.title}
-                          </a>
-                        )}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        </div>
 
         {/* Bolt.new Link with Image */}
         <motion.a
@@ -1524,9 +1463,9 @@ const BriskAutomationLanding: React.FC = () => {
           transition={{ duration: 0.5, delay: 1 }}
         >
           <img 
-            src="/public/image.png" 
+            src="/image.png" 
             alt="Built with Bolt.new" 
-            className="w-32 h-32 rounded-full shadow-lg hover:shadow-xl transition-shadow duration-300"
+            className="w-48 h-48 rounded-full shadow-lg hover:shadow-xl transition-shadow duration-300"
           />
         </motion.a>
       </footer>
